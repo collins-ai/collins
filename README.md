@@ -16,3 +16,8 @@ The technologies involved in developing this project are:
 
 -React + Vite
 -TailwindCSS
+-Gsap
+
+# Live Site URL:
+
+https://collins-fawn.vercel.app/

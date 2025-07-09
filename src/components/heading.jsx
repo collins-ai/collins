@@ -1,9 +1,12 @@
-const Heading = ({minor, major}) => {
+const Heading = ({ minor, major, sub }) => {
   return (
-    <h2 className="flex flex-col items-center bg-black">
-      <span className="bg-neutral-800 px-2 py-1 text-sm rounded-full">{minor}</span>
-      <span className="text-xl font-bold bg-gradient-to-r bg-clip-text from-amber-500 to-orange-600 text-transparent">{major}</span>
-    </h2>
+    <div className="flex flex-col items-center gap-10">
+      <h2 className="flex flex-col items-center">
+        <span className="bg-neutral-800 text-white px-2 py-1 text-sm rounded-full">{minor}</span>
+        <span className="text-xl font-bold bg-gradient-to-r bg-clip-text from-amber-500 to-orange-600 text-transparent">{major}</span>
+      </h2>
+      <p className="text-center sm:w-1/2">{sub}</p>
+    </div>
   )
 }
 

@@ -1,3 +1,4 @@
+import { Link } from "react-scroll"
 import { navigationLinks } from "../constants/headerConstant"
 
 const DesktopNavbar = () => {
@@ -5,7 +6,9 @@ const DesktopNavbar = () => {
     <nav>
       <ul className="hidden gap-10 lg:flex">
         {navigationLinks.map((navigationLink, index) => (
-          <li key={index}><a href={navigationLink.path} className="p-2 hover:border-b hover:border-b-white">{navigationLink.title}</a></li>
+          <li key={index}>
+            <Link to={navigationLink.path} offset={-50} tabIndex={0} className="p-2 cursor-pointer hover:border-b hover:border-b-white">{navigationLink.title}</Link>
+          </li>
         ))}
       </ul>
     </nav>
