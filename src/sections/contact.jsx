@@ -1,4 +1,6 @@
 import Heading from "../components/heading"
+import { gsap } from "gsap"
+import { useGSAP } from "@gsap/react"
 import { useState } from "react"
 import { minorHeading, majorHeading, subHeading, desk } from "../constants/contactConstant"
 
@@ -28,11 +30,24 @@ const Contact = () => {
     }
   }
 
+  useGSAP(() => {
+    gsap.timeline({scrollTrigger: {
+      trigger: `.form`,
+      start: `top 80%`,
+      end: `bottom bottom`,
+      scrub: 5
+    }})
+    .from(
+      `.form`,
+      {scale: 0, opacity: 0, ease: `power1.out`}
+    )
+  })
+
   return (
     <section id="contact" className="bg-neutral-100 text-black px-4 py-20 text-lg flex flex-col gap-30">
       <Heading minor={minorHeading} major={majorHeading} sub={subHeading} />
       <div className="flex flex-col gap-20 px-5 sm:flex-row sm:items-center sm:justify-center lg:px-20">
-        <form onSubmit={submitForm} className="bg-neutral-800 p-5 rounded-xl flex flex-col gap-5 sm:basis-[50%] lg:basis-[40%]">
+        <form onSubmit={submitForm} className="form bg-neutral-800 p-5 rounded-xl flex flex-col gap-5 sm:basis-[50%] lg:basis-[40%]">
           <div className="flex flex-col gap-2">
             <label htmlFor="name" className="text-white">Name</label>
             <input type="text" name="name" id="name" placeholder="Your name" className="bg-white p-2 rounded-lg" required />
