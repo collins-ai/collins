@@ -63,7 +63,7 @@ const Contact = () => {
           <input type="submit" value={sendMessage} className="bg-white font-semibold p-2 rounded-lg cursor-pointer hover:bg-black hover:text-white" />
         </form>
         <div className="sm:basis-[50%]">
-          <img src={desk} alt="desk" className="rounded-xl mx-auto w-full" />
+          <img src={desk} alt="a 3d room with a desktop setup" className="rounded-xl mx-auto w-full" />
         </div>
       </div>
     </section>

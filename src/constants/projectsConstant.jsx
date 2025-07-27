@@ -1,9 +1,9 @@
 import spaceTourism from "../assets/images/spaceTourism.png"
 import bookmarkLandingPage from "../assets/images/bookmarkLandingPage.png"
 import loopstudiosLandingPage from "../assets/images/loopstudiosLandingPage.png"
-import eCommercePage from "../assets/images/eCommercePage.png"
-import newsletterForm from "../assets/images/newsletterForm.png"
-import roomHomepage from "../assets/images/roomHomepage.png"
+import edusity from "../assets/images/edusity.png"
+import foodie from "../assets/images/foodie.png"
+import virtualR from "../assets/images/virtualR.png"
 import { MdAnimation } from "react-icons/md"
 import { FaUsersGear } from "react-icons/fa6"
 import { TbDeviceDesktopCode, TbDeviceMobileCheck } from "react-icons/tb"
@@ -21,6 +21,18 @@ const features = [
 
 const projects = [
   {
+    title: `virtualR`, image: virtualR, link: `https://virtual-r-khaki-nine.vercel.app/`,
+    description: `I focus on building mobile responsive and interactive websites for founders and business owners.`
+  },
+  {
+    title: `foodie`, image: foodie, link: `https://foodie-three-swart.vercel.app/`,
+    description: `I focus on building mobile responsive and interactive websites for founders and business owners.`
+  },
+  {
+    title: `edusity`, image: edusity, link: `https://edusity-virid.vercel.app/`,
+    description: `I focus on building mobile responsive and interactive websites for founders and business owners.`
+  },
+  {
     title: `Space tourism`, image: spaceTourism, link: `https://collins-ai.github.io/space-tourism/`,
     description: `I focus on building mobile responsive and interactive websites for founders and business owners.`
   },
@@ -30,18 +42,6 @@ const projects = [
   },
   {
     title: `Loopstudios landing page`, image: loopstudiosLandingPage, link: `https://collins-ai.github.io/loopstudios-landing-page/`,
-    description: `I focus on building mobile responsive and interactive websites for founders and business owners.`
-  },
-  {
-    title: `E-commerce page`, image: eCommercePage, link: `https://collins-ai.github.io/E-commerce-page/`,
-    description: `I focus on building mobile responsive and interactive websites for founders and business owners.`
-  },
-  {
-    title: `Newsletter form`, image: newsletterForm, link: `https://collins-ai.github.io/newsletter-form/`,
-    description: `I focus on building mobile responsive and interactive websites for founders and business owners.`
-  },
-  {
-    title: `Room homepage`, image: roomHomepage, link: `https://collins-ai.github.io/room-homepage/`,
     description: `I focus on building mobile responsive and interactive websites for founders and business owners.`
   }
 ]

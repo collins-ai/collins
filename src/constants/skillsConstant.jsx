@@ -12,14 +12,14 @@ const majorHeading = `The skills I bring to the table`
 const subHeading = `The frontend development languages, frameworks, and libraries I use in building responsive and interactive websites.`
 
 const skills = [
-  {title: `React`, logo: react},
-  {title: `Tailwind`, logo: tailwind},
-  {title: `HTML`, logo: html},
-  {title: `CSS`, logo: css},
-  {title: `JavaScript`, logo: javascript},
-  {title: `Github`, logo: github},
-  {title: `Git`, logo: git},
-  {title: `Gsap`, logo: gsap}
+  {title: `React`, link: `https://react.dev/`, logo: react},
+  {title: `Tailwind`, link: `https://tailwindcss.com/`, logo: tailwind},
+  {title: `HTML`, link: `https://www.w3schools.com/html/default.asp`, logo: html},
+  {title: `CSS`, link: `https://www.w3schools.com/css/default.asp`, logo: css},
+  {title: `JavaScript`, link: `https://www.w3schools.com/js/`, logo: javascript},
+  {title: `Github`, link: `https://github.com/`, logo: github},
+  {title: `Git`, link: `https://git-scm.com/`, logo: git},
+  {title: `Gsap`, link: `https://gsap.com/`, logo: gsap}
 ]
 
 export { minorHeading, majorHeading, subHeading, skills }

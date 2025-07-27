@@ -43,7 +43,7 @@ const Projects = () => {
           <div ref={sliderRef} className={`p-10 flex gap-10 w-[460%] duration-1000 sm:w-[260%] lg:w-[230%] lg:gap-20`}>
             {projects.map((project, index) => (
               <div key={index} className="project bg-white shadow-xl p-4 rounded-2xl flex flex-col items-start gap-5">
-                <img src={project.image} alt="projects" className="bg-transparent" />
+                <img src={project.image} alt="Screenshot of a project in a laptop frame" className="bg-transparent" />
                 <h3 className="font-bold">{project.title}</h3>
                 <p className="leading-tight">{project.description}</p>
                 <a href={project.link} target="_blank" className="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-2 py-1 rounded-lg cursor-pointer hover:bg-gradient-to-r hover:from-black hover:to-black">View project</a>

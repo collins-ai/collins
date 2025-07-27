@@ -33,7 +33,7 @@ const Hero = () => {
           <p className="leading-tight text-neutral-400 sm:w-4/5 lg:w-full">{description}</p>
         </div>
         <div className="w-3/4 mx-auto">
-          <img src={collins} alt="Sunday Collins" className="rounded-2xl sm:w-6/12 sm:mx-auto" />
+          <img src={collins} alt="Sunday Collins - frontend web developer" className="rounded-2xl sm:w-6/12 sm:mx-auto" />
         </div>
       </div>
       <div className="flex flex-col gap-5 sm:flex-row sm:flex-wrap sm:justify-between lg:flex-nowrap">

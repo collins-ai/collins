@@ -1,5 +1,5 @@
 import { ReactTyped } from "react-typed"
-import collins from "../assets/images/collins1.png"
+import collins from "../assets/images/collins.png"
 
 const span1 = `Hi, I'm Sunday Collins`
 const span3 = `shaping ideas into reality`
